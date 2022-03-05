@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Žydrunas Portfolio - Frontend Developer</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/17cc69deeb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/script.js" type="module"></script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="nav__logo">
+        <a href="#"><img src="./img/logo.png" loading="lazy" alt="logo" /></a>
+      </div>
+      <div id="nav__menu"></div>
+    </nav>
+    <div class="hero">
+      <div class="hero__info">
+        <span class="hero__info--name">Hello, I'm Žydrūnas</span>
+        <span class="hero__info--wai">Frontend developer</span>
+        <span class="hero__info--about"
+          >Self-taught frontend developer based in Lithuania. Let's work
+          together.</span
+        >
+        <div class="hero__info__btn__list">
+          <button class="hero__info__btn hero__info__btn--hire">
+            <a class="hero__info__btn--text" href="#contact">hire me</a>
+          </button>
+          <button class="hero__info__btn hero__info__btn--cv">
+            <a
+              class="hero__info__btn--text"
+              href="./files/CV.pdf"
+              target="_blank"
+              >get cv</a
+            >
+          </button>
+        </div>
+      </div>
+      <div class="hero__pic">
+        <div class="hero__pic__wrapper">
+          <img
+            src="./img/portrait-placeholder.jpg"
+            data-src="./img/portrait.png"
+            id="hero-img"
+            class="lazyload"
+            alt="portrait"
+          />
+        </div>
+        <div id="hr"></div>
+      </div>
+    </div>
+    <div id="about" class="aboutme">
+      <div class="aboutme__img">
+        <img
+          src="./svg/undraw_profile_details_re_ch9r.svg"
+          alt="front-end-image"
+        />
+      </div>
+      <div class="aboutme__text">
+        <div class="aboutme_text__sub">
+          <h3>About me</h3>
+          <p>
+            Hello, my name is Žydrūnas. I am frontend developer with a bit of
+            backend knowledge. Motivated to become fullstack developer. I enjoy
+            to use my coding skills for problem solving and building amazing
+            things. I upload my projects to GitHub and try improve and learn
+            everyday!
+          </p>
+        </div>
+        <div class="aboutme_text__sub">
+          <h3>Academic history</h3>
+          <div class="aboutme_text__sub--info"></div>
+        </div>
+      </div>
+      <div id="hr2"></div>
+    </div>
+
+    <div id="skills">
+      <h3>My skills</h3>
+      <span>Languages and Tools</span>
+      <div id="orbit">
+        <div id="skills-icons"></div>
+      </div>
+    </div>
+    
+    <div id="work">
+      <div id="hr3"></div>
+      <h3>My portfolio</h3>
+      <span>Recent works</span>
+      <div class="work__example__wrapper">
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <h3>Contact Me</h3>
+      <span>Get in touch</span>
+      <div class="contact__wrapper">
+        <div class="contact__svg">
+          <img src="./svg/undraw_personal_info_re_ur1n.svg" alt="">
+        </div>
+        <div class="contact__form">
+          <form id="my-form" action="https://formspree.io/f/mknybvzl" method="POST">
+            <label>Email:</label>
+            <input minlength='6' type="email" name="email" placeholder="Enter email"/>
+            <label>Message:</label>
+          <textarea minlength='10' type="text" name="message" placeholder="Your message"></textarea>
+            <p id="my-form-status"></p>
+            <button id="my-form-button" class="my-form-button--colors">Send</button>
+          </form>
+      </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="social__icons">
+        <a href="https://github.com/zydrunasrimkus" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a>
+        <a href="https://www.linkedin.com/in/zydrunasrimkus/" target="_blank"><i class="fa-brands fa-linkedin fa-xl"></i></a>
+      </div>
+    </div>
+  </body>
+</html>
