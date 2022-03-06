@@ -857,10 +857,10 @@ body {
 #work .work__example__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-items: center;
+  gap: 1rem;
   padding: 1.25rem;
 }
 
@@ -878,7 +878,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow-wrap: break-word;
   background-color: var(--light-shades);
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -900,6 +899,14 @@ body {
   font-weight: 700;
   margin: 0.5rem 0 1rem;
   text-transform: capitalize;
+  text-align: center;
+}
+
+#work .work__example__wrapper .work__example .work__example__btn--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
 }
 
 #work .work__example__wrapper .work__example .work__example__btn {
@@ -908,14 +915,12 @@ body {
   position: relative;
   background: var(--light-shades);
   padding: 1rem;
-  margin: 1rem;
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
   left: 0px;
   top: 0px;
-  width: 130px;
-  text-align: center;
+  width: 120px;
 }
 
 #work .work__example__wrapper .work__example .work__example__btn span {
@@ -942,6 +947,7 @@ body {
 }
 
 #contact {
+  position: relative;
   padding: 0 1.25rem 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1217,5 +1223,25 @@ body {
 .social__icons a:focus i,
 .social__icons a:active i {
   color: var(--dark-shades);
+}
+
+.custom-shape-divider-top-1646581045 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1646581045 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 60px;
+}
+
+.custom-shape-divider-top-1646581045 .shape-fill {
+  fill: var(--light-shades);
 }
 /*# sourceMappingURL=styles.css.map */
