@@ -47,6 +47,12 @@ const projectList = [
     github: "https://github.com/zydrunasrimkus/my-tracker",
     demo: "https://optimistic-wilson-94b8c0.netlify.app/",
   },
+  {
+    sc: "https://raw.githubusercontent.com/zydrunasrimkus/advice-generator/main/images/ss/advicegen.png",
+    name: "advice generator",
+    github: "https://github.com/zydrunasrimkus/advice-generator",
+    demo: "https://zydrunasrimkus.github.io/advice-generator/",
+  },
 ];
 
 export { projectList };
