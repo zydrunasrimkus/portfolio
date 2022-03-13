@@ -53,6 +53,12 @@ const projectList = [
     github: "https://github.com/zydrunasrimkus/advice-generator",
     demo: "https://zydrunasrimkus.github.io/advice-generator/",
   },
+  {
+    sc: "https://nimbus-screenshots.s3.amazonaws.com/s/49d8ba75e58032663bea0c0316198bc2.png",
+    name: "Pricing component with toggle React",
+    github: "https://github.com/zydrunasrimkus/pricing-component-with-toggle",
+    demo: "https://zydrunasrimkus.github.io/pricing-component-with-toggle/",
+  },
 ];
 
 export { projectList };
